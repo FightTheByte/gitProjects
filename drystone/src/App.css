@@ -1,0 +1,18 @@
+body{
+  background-color: rgb(3, 9, 41);
+}
+
+.title{
+  text-align: center;
+  color: rgb(180, 205, 19)
+}
+
+.main{
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr;
+  margin: auto;
+  width: 100%;
+  gap: 1rem;
+}
+

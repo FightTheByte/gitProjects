@@ -1,0 +1,16 @@
+.form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    gap: 1rem;
+    width: 20%;
+    height: 10rem;
+    justify-content: center;
+}
+
+.info{
+    color: rgb(180, 205, 19);
+    width: 50%;
+    text-align: center;
+    margin: 2rem auto;
+}
