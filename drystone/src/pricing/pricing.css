@@ -1,6 +1,6 @@
 .priceContainer{
     text-align: center;
-    justify-content: center;
+    justify-items: center;
     display: grid;
     margin: auto;
     width: 50%;
