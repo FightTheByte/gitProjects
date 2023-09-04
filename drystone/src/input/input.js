@@ -28,6 +28,7 @@ export const Input = () => {
             type='number' 
             step={1} 
             min={1}
+            max={500}
             required={true}
             placeholder='Length in meters'
             onChange={(e) => {setWallLength(e.target.value)}} 
@@ -36,6 +37,7 @@ export const Input = () => {
             type='number' 
             step={0.1} 
             min={0.5}
+            max={1.65}
             required={true}
             placeholder='Height in meters'
             onChange={(e) => {setHeight(e.target.value)}}

@@ -47,7 +47,7 @@ export const Pricing = () => {
                   <h3>{index==0?'Lowest':index===1?'Average':'Highest'} estimate is: £{x}</h3>
                   {
                     index==0?<p>Pricing assumes the cheapest or reclaimed stone, at £100 a tonne. This pricing also assumes the lowest recorded current wage for a Stonemason, at £20 per hour </p>
-                    :index===1?<p>Pricing averages out the cost of stone of one tonne of stone, at £200 and applies the average wage of a Stonemason being £27.25 per hour</p>
+                    :index===1?<p>Pricing averages out the cost of one tonne of stone, at £200 and applies the average wage of a Stonemason being £27.25 per hour</p>
                     :<p>Pricing assumes the highest end pricing for a tonne of luxury stone, at £300 a tonne. Then accounts for the higher end of a Stonemason's hourly pay, at £44 per hour</p>
                   }
                 </div>
