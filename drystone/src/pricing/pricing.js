@@ -27,11 +27,11 @@ export const Pricing = () => {
       sftGrn
       ?setPricing(prevState => prevState.map((x, index) =>{
         if(index===3){return x};
-        return x + prevState[3];
+        return x.est + prevState[3].grndEst;
       }))
       :setPricing(prevState => prevState.map((x, index) =>{
         if(index===3){return x};
-        return x - prevState[3];
+        return x.est - prevState[3].grndEst;
       }))
     }, [sftGrn]);
 
@@ -44,18 +44,21 @@ export const Pricing = () => {
               ?pricing.map((x, index) => {
                 if(index===3)return;
                 return <div className="price" key={`price${index}`}>
-                  <h3>{index==0?'Lowest':index===1?'Average':'Highest'} estimate is: £{x}</h3>
+                  <h3>{index===0?'Lowest':index===1?'Average':'Highest'} estimate is: £{x.est}</h3>
                   {
-                    index==0?<p>Pricing assumes the cheapest or reclaimed stone, at £100 a tonne. This pricing also assumes the lowest recorded current wage for a Stonemason, at £20 per hour </p>
-                    :index===1?<p>Pricing averages out the cost of one tonne of stone, at £200 and applies the average wage of a Stonemason being £27.25 per hour</p>
-                    :<p>Pricing assumes the highest end pricing for a tonne of luxury stone, at £300 a tonne. Then accounts for the higher end of a Stonemason's hourly pay, at £44 per hour</p>
+                    <ul className="priceList">
+                      <li>Price per tonne of stone: £{x.matCost}</li>
+                      <li>Price per hour of Stonemason: £{x.rate}</li>
+                      <li>Tonnage of stone required: {pricing[3].tonnage}</li> 
+                      <li>Total cost of stone: £{x.matCost * pricing[3].tonnage}</li> 
+                    </ul>
                   }
                 </div>
               })
               :''
             }
           </div>
-          <div className="btnColumn">
+          <div className="btnRow">
             <button 
               className="softBtn"
               onClick={() => setSetGrn(!sftGrn)}
