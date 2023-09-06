@@ -3,7 +3,7 @@
     justify-items: center;
     display: grid;
     margin: auto;
-    width: 50%;
+    width: 70%;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0rem;
 }
@@ -33,12 +33,17 @@
   cursor: pointer;
 }
 
-.btnColumn{
+.btnRow{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   width: 100%;
-  margin: 5rem auto;
-  gap: 0rem;
+  margin: 0rem auto;
+  gap: 2rem;
   justify-items: center;
   align-items: space-between;
+}
+
+.priceList{
+  text-align: left;
+  margin: 0rem 1rem 0rem ;
 }
