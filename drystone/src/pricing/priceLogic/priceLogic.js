@@ -1,6 +1,6 @@
 export async function priceLogic(length, height){
   const grndWork = 12;
-  const tonnage = length * height;
+  const tonnage = Math.ceiling(length * height);
   
 
   const hourlyRate = {
@@ -38,7 +38,7 @@ export async function priceLogic(length, height){
     },
     {
       grndEst,
-      tonnage: Math.ceiling(tonnage)
+      tonnage
     }
   ]
 
