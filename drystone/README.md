@@ -5,7 +5,7 @@
 
 This application allows the user to calculate the cost of a drystone wall, by meter squared. With a focus on an easy to use user-interface, simply add the height and length, in meters.
 
-During the pricing, the app will show three estimates, low, average and high. We can break down the estimates in the following way. 
+During the pricing, the app will show three estimates, low, average and high. We can break down the estimates in the following way:
 
 - Low: This pricing assumes the least expensive stone, inc. delivery, and also assumes the cheapest wage of a Stonemason. Thus it could be considered to be representative of reclaimed or field stone, in a low income area.
 - Average: This pricing assumes the average price of selected stone, inc. delivery, and also assumes the average wage of a Stonemason. Thus it could be considered to be representative of selected sandstone, in an area of average affluence.
