@@ -7,9 +7,9 @@ This application allows the user to calculate the cost of a drystone wall, by me
 
 During the pricing, the app will show three estimates, low, average and high. We can break down the estimates in the following way. 
 
-- Low: This pricing assumes the least expensive stone inc. delivery and also assumes the cheapest wage of a Stonemason. Thus it could be considered to be representative of reclaimed or field stone, in a low income area.
-- Average: This pricing assumes the average price of selected stone inc. delivery and also assumes the average wage of a Stonemason. Thus it could be considered to be representative of selected sandstone, in an area of average affluence.
-- High: This pricing assumes the higher range of cost, for stone inc. delivery, and also assumes the highest end of a Stonemasons wage. Thus it could be considered to be representative of luxury stone types, in a high income area (Such as the south of England)
+- Low: This pricing assumes the least expensive stone, inc. delivery, and also assumes the cheapest wage of a Stonemason. Thus it could be considered to be representative of reclaimed or field stone, in a low income area.
+- Average: This pricing assumes the average price of selected stone, inc. delivery, and also assumes the average wage of a Stonemason. Thus it could be considered to be representative of selected sandstone, in an area of average affluence.
+- High: This pricing assumes the higher range of cost for stone, inc. delivery, and also assumes the highest end of a Stonemasons wage. Thus it could be considered to be representative of luxury stone types, in a high income area (Such as the south of England)
 
 ---
 
