@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Wallet To Wall
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Drystone Cost Calculator**
 
-## Available Scripts
+This application allows the user to calculate the cost of a drystone wall, by meter squared. With a focus on an easy to use user-interface, simply add the height and length in meters.
 
-In the project directory, you can run:
+During the pricing, the app will show 3 estimates, low, average and high. We can break down the estimates in the following way. 
 
-### `npm start`
+- Low: This pricing assumes the least expensive stone inc. delivery and also assumes the cheapest wage of a Stonemason. Thus it could be considered to be representative of reclaimed or field stone, in a low income area.
+- Average: This pricing assumes the average price of selected stone inc. delivery and also assumes the average wage of a Stonemason. Thus it could be considered to be representative of selected sandstone, in an area of average affluence.
+- High: This pricing assumes the higher range of cost, for stone inc. delivery, and also assumes the highest end of a Stonemasons wage. Thus it could be considered to be representative of luxury stone types, in a high income area (Such as the south of England).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###Constraints
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This app only accepts heights in the range of 0.5m - 1.65m, this is in accordance with industry standards.
 
-### `npm test`
+This app only accepts length in the range of 1m - 1000m, this was considered to be the maximum and minimum values that offered relevance to the user. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### Possible Upgrades
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Future functionality being considered includes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Spinning up an Express server and Database, to store cookies of previous quotes.
+- Allowing the User to mix and match stone price ranges, with labour price ranges.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using my app! 
