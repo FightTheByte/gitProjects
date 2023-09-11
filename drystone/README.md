@@ -22,7 +22,7 @@ This app also allows the addition of potential ground work costs, in the event t
 
 This app only accepts heights in the range of 0.5m - 1.65m, this is in accordance with industry standards.
 
-This app only accepts length in the range of 1m - 1000m, this was considered to be the maximum and minimum values that offered relevance to the user. 
+This app only accepts length in the range of 1m - 1000m, this was considered to be the minimum and maximum values that offered relevance to the user. 
 
 ---
 
