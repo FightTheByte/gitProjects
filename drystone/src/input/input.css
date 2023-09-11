@@ -17,6 +17,12 @@
     margin: 2rem auto;
 }
 
+.submit{
+    background-color: rgb(180, 205, 19);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
 input{
     width: 10rem;
 }
