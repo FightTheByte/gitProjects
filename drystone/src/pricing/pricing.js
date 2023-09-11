@@ -26,12 +26,12 @@ export const Pricing = () => {
       if(!pricing)return;
       sftGrn
       ?setPricing(prevState => prevState.map((x, index) =>{
-        if(index===3){return x};
+        if(index===3)return x;
         x.est = x.est + prevState[3].grndEst;
         return {...x};
       }))
       :setPricing(prevState => prevState.map((x, index) =>{
-        if(index===3){return x};
+        if(index===3)return x;
         x.est = x.est - prevState[3].grndEst;
         return {...x}
       }))
