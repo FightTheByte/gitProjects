@@ -1,3 +1,5 @@
+import { estimate } from "./estimate";
+
 export async function priceLogic(length, height){
   const grndWork = 12;
   const tonnage = await Math.ceil(length * height);
@@ -12,10 +14,6 @@ export async function priceLogic(length, height){
     low: 100,
     avg: 200,
     high: 300 
-  };
-
-  function estimate(rate, cost){
-    return Math.ceil((tonnage*(rate*4))+(tonnage*cost));
   };
 
   const lowEst = await estimate(hourlyRate.low, matCost.low);
