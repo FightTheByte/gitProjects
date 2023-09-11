@@ -28,7 +28,7 @@ export const Input = () => {
             type='number' 
             step={1} 
             min={1}
-            max={10000000}
+            max={1000}
             required={true}
             placeholder='Length in meters'
             onChange={(e) => {setWallLength(e.target.value)}} 
