@@ -5,9 +5,9 @@ import { priceLogic } from "./priceLogic/priceLogic";
 import './pricing.css';
 
 export const Pricing = () => {
-    const [height, setHeight] = useState();
-    const [length, setLength] = useState();
-    const [pricing, setPricing] = useState();
+    const [height, setHeight] = useState(null);
+    const [length, setLength] = useState(null);
+    const [pricing, setPricing] = useState(null);
     const [sftGrn, setSetGrn] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
