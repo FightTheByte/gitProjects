@@ -16,9 +16,9 @@ export async function priceLogic(length, height){
     high: 300 
   };
 
-  const lowEst = await estimate(hourlyRate.low, matCost.low);
-  const avgEst = await estimate(hourlyRate.avg, matCost.avg);
-  const highEst = await estimate(hourlyRate.high, matCost.high);
+  const lowEst = await estimate(hourlyRate.low, matCost.low, tonnage);
+  const avgEst = await estimate(hourlyRate.avg, matCost.avg, tonnage);
+  const highEst = await estimate(hourlyRate.high, matCost.high, tonnage);
   const grndEst = await Math.ceil((grndWork + (0.3*(hourlyRate.low*4))) * length);
   
   return [

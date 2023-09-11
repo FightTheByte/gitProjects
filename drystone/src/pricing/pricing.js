@@ -7,12 +7,16 @@ import './pricing.css';
 export const Pricing = () => {
     const [pricing, setPricing] = useState(null);
     const [sftGrn, setSetGrn] = useState(false);
+    const [length, setLength] = useState(null);
+    const [height, setHeight] = useState(null);
     const navigate = useNavigate();
     const location = useLocation();
 
     useEffect(() => {
       (async function(){
-          const prices = await priceLogic(location.state.wallLength, location.state.height);
+          setLength(location.state.wallLength);
+          setHeight(location.state.height);
+          const prices = await priceLogic(length, height);
           setPricing(prices);
         }
       )();
