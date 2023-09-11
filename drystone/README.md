@@ -9,9 +9,11 @@ During the pricing, the app will show 3 estimates, low, average and high. We can
 
 - Low: This pricing assumes the least expensive stone inc. delivery and also assumes the cheapest wage of a Stonemason. Thus it could be considered to be representative of reclaimed or field stone, in a low income area.
 - Average: This pricing assumes the average price of selected stone inc. delivery and also assumes the average wage of a Stonemason. Thus it could be considered to be representative of selected sandstone, in an area of average affluence.
-- High: This pricing assumes the higher range of cost, for stone inc. delivery, and also assumes the highest end of a Stonemasons wage. Thus it could be considered to be representative of luxury stone types, in a high income area (Such as the south of England).
+- High: This pricing assumes the higher range of cost, for stone inc. delivery, and also assumes the highest end of a Stonemasons wage. Thus it could be considered to be representative of luxury stone types, in a high income area (Such as the south of England)
 
-###Constraints
+---
+
+### Constraints
 ---
 
 This app only accepts heights in the range of 0.5m - 1.65m, this is in accordance with industry standards.
