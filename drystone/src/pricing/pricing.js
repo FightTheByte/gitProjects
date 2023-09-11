@@ -14,9 +14,9 @@ export const Pricing = () => {
 
     useEffect(() => {
       (async function(){
-          await setLength(location.state.wallLength);
-          await setHeight(location.state.height);
-          const prices = await priceLogic(length, height);
+          setLength(location.state.wallLength);
+          setHeight(location.state.height);
+          const prices = await priceLogic(location.state.wallLength, location.state.height);
           setPricing(prices);
         }
       )();
