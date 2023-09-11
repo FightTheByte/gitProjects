@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './input.css';
 
 export const Input = () => {
-  const [wallLength, setWallLength] = useState(); 
-  const [height, setHeight] = useState();
+  const [wallLength, setWallLength] = useState(null); 
+  const [height, setHeight] = useState(null);
   const navigate = useNavigate();
 
   function handleSubmit(e){
@@ -42,7 +42,11 @@ export const Input = () => {
             placeholder='Height in meters'
             onChange={(e) => {setHeight(e.target.value)}}
           />
-          <input type='submit' value='calculate cost'/>
+          <input 
+            type='submit' 
+            value='calculate cost'
+            className='submit'
+          />
         </form>
         <p 
           className='info'
