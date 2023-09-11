@@ -5,8 +5,6 @@ import { priceLogic } from "./priceLogic/priceLogic";
 import './pricing.css';
 
 export const Pricing = () => {
-    const [height, setHeight] = useState(null);
-    const [length, setLength] = useState(null);
     const [pricing, setPricing] = useState(null);
     const [sftGrn, setSetGrn] = useState(false);
     const navigate = useNavigate();
@@ -14,8 +12,6 @@ export const Pricing = () => {
 
     useEffect(() => {
       (async function(){
-          await setLength(location.state.wallLength);
-          await setHeight(location.state.height);
           const prices = await priceLogic(location.state.wallLength, location.state.height);
           setPricing(prices);
         }
