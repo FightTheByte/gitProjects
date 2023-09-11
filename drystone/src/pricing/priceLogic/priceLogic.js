@@ -1,7 +1,6 @@
 export async function priceLogic(length, height){
   const grndWork = 12;
   const tonnage = await Math.ceil(length * height);
-  
 
   const hourlyRate = {
     low: 20,
@@ -15,9 +14,13 @@ export async function priceLogic(length, height){
     high: 300 
   };
 
-  const lowEst = await Math.round((tonnage*(hourlyRate.low*4))+(tonnage*matCost.low));
-  const highEst = await Math.round((tonnage*(hourlyRate.high*4))+(tonnage*matCost.high));
-  const avgEst = await Math.round((tonnage*(hourlyRate.avg*4))+(tonnage*matCost.avg));
+  function estimate(rate, cost){
+    return Math.ceil((tonnage*(rate*4))+(tonnage*cost));
+  };
+
+  const lowEst = await estimate(hourlyRate.low, matCost.low);
+  const highEst = await estimate(hourlyRate.avg, matCost.avg);
+  const avgEst = await estimate(hourlyRate.high, matCost.high);
   const grndEst = await Math.round((grndWork + (0.3*(hourlyRate.low*4))) * length);
   
   return [
